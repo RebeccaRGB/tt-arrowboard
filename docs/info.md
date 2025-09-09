@@ -21,7 +21,7 @@ There are sixteen patterns selectable with inputs 0-3. Input 4 enables flashing 
 | 12      | ![](pB0DD.svg)  | ![](pB0DD.svg) ![](p0000.svg)                |
 | 13      | ![](pA000.svg)  | ![](pA000.svg) ![](p0000.svg)                |
 | 14      | ![](p007F.svg)  | ![](p007F.svg) ![](p0000.svg)                |
-| 15      | ![](pB9D5.svg)  | ![](p9850.svg) ![](p2185.svg)                |
+| 15      | ![](pB9D5.svg)  | ![](p2185.svg) ![](p9850.svg)                |
 
 ## How to test
 
