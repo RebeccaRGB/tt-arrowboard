@@ -115,7 +115,7 @@ async def test_project(dut):
     await test_arrow(10, False, True, 0x8810, 0xCA14, 0xEA95, 0xEA95)
     await test_arrow(11, False, True, 0x2104, 0x6514, 0xF554, 0xF554)
     await test_arrow(12, False, True, 0xB0DD, 0)
-    await test_arrow(13, False, True, 0xA000, 0)
+    await test_arrow(13, False, True, 0x2000, 0x8000)
     await test_arrow(14, False, True, 0x007F, 0)
     await test_arrow(15, False, True, 0x2185, 0x9850)
 
@@ -132,6 +132,6 @@ async def test_project(dut):
     await test_arrow(10, True, True, 0x8810, 0xCA14, 0xEA95, 0)
     await test_arrow(11, True, True, 0x2104, 0x6514, 0xF554, 0)
     await test_arrow(12, True, True, 0xB0DD, 0)
-    await test_arrow(13, True, True, 0xA000, 0)
+    await test_arrow(13, True, True, 0x2000, 0x8000)
     await test_arrow(14, True, True, 0x007F, 0)
     await test_arrow(15, True, True, 0x2185, 0x9850)

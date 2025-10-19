@@ -27,7 +27,9 @@ module arrow_board (
 			4'hB: data = (sequential & ~phase[1]) ? (phase[0] ? 16'h6514 : 16'h2104) : (flashing & phase[0]) ? 16'h0000 : 16'hF554;
 
 			4'hC: data = ((sequential | flashing) & phase[0]) ? 16'h0000 : 16'hB0DD;
-			4'hD: data = ((sequential | flashing) & phase[0]) ? 16'h0000 : 16'hA000;
+
+			4'hD: data = sequential ? (phase[0] ? 16'h8000 : 16'h2000) : (flashing & phase[0]) ? 16'h0000 : 16'hA000;
+
 			4'hE: data = ((sequential | flashing) & phase[0]) ? 16'h0000 : 16'h007F;
 
 			4'hF: data = sequential ? (phase[0] ? 16'h9850 : 16'h2185) : (flashing & phase[0]) ? 16'h0000 : 16'hB9D5;

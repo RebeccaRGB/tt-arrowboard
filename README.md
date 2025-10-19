@@ -23,7 +23,7 @@ There are sixteen patterns selectable with inputs 0-3. Input 4 enables flashing 
 | 10      | ![](docs/pEA95.svg) | ![](docs/p8810.svg) ![](docs/pCA14.svg) ![](docs/pEA95.svg) |
 | 11      | ![](docs/pF554.svg) | ![](docs/p2104.svg) ![](docs/p6514.svg) ![](docs/pF554.svg) |
 | 12      | ![](docs/pB0DD.svg) | ![](docs/pB0DD.svg) ![](docs/p0000.svg)                     |
-| 13      | ![](docs/pA000.svg) | ![](docs/pA000.svg) ![](docs/p0000.svg)                     |
+| 13      | ![](docs/pA000.svg) | ![](docs/p2000.svg) ![](docs/p8000.svg)                     |
 | 14      | ![](docs/p007F.svg) | ![](docs/p007F.svg) ![](docs/p0000.svg)                     |
 | 15      | ![](docs/pB9D5.svg) | ![](docs/p2185.svg) ![](docs/p9850.svg)                     |
 
@@ -41,7 +41,7 @@ Set `ui_in[3:0]` to one of the sixteen patterns. Set `ui_in[4]` low and `ui_in[5
 
 Set `ui_in[3:0]` to one of the sixteen patterns. Set `ui_in[4]` high and `ui_in[5]` high. Set `ui_in[6]` high. Pulse `clk` at a desired rate. Outputs should reflect a sequential pattern with a blank last frame.
 
-Special cases: The animated versions of patterns 12, 13, and 14 behave the same as the flashing versions and are unaffected by input 4. The animated version of pattern 15 always alternates between the same two frames without repeated or blank frames.
+Special cases: The animated versions of patterns 12 and 14 behave the same as the flashing versions and are unaffected by input 4. The animated versions of patterns 13 and 15 always alternate between the same two frames without repeated or blank frames.
 
 ## External hardware
 
